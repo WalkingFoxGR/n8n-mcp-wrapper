@@ -1,6 +1,6 @@
 import http from 'node:http'
 import { spawn } from 'node:child_process'
-import { ReadBuffer, serializeMessage } from '@modelcontextprotocol/sdk/shared/stdio'
+import { ReadBuffer, serializeMessage } from '@modelcontextprotocol/sdk/shared/stdio.js'
 
 const PORT = Number(process.env.PORT || 3000)
 const COMMAND = process.env.MCP_COMMAND || 'npx'
